@@ -17,12 +17,12 @@ app.use(express.urlencoded({extended:false}));
 
 // Ruta para servir index.html cuando se acceda al directorio raíz '/'
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "index.html");
 });
 
 // Ruta para servir login.html cuando se acceda a '/login'
 app.get('/login', (req, res) => {
-  res.sendFile(__dirname + "/login.html");
+  res.sendFile(__dirname + "login.html");
 });
 
 // Iniciar el servidor
