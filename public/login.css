@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Color de fondo para toda la pantalla */
+  }
+  
+  .login-conteiner {
+    width: 300px; /* Ancho del contenedor del formulario */
+    margin: 50px auto; /* Centrar el contenedor del formulario en la pantalla */
+    background-color: #ffffff; /* Color de fondo para el contenedor del formulario */
+    padding: 20px; /* Espaciado interno del contenedor del formulario */
+    border-radius: 10px; /* Borde redondeado para el contenedor del formulario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para el contenedor del formulario */
+  }
+  
+  .login-conteiner {
+    text-align: center;
+    margin-top: 19%;
+  }
+
+.login-conteiner input[type="number"],
+.login-conteiner input[type="text"],
+.login-conteiner input[type="email"],
+.login-conteiner input[type="password"],
+.login-conteiner input[type="submit"] {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-sizing: border-box; /* Asegura que el padding y el borde no aumenten el ancho del elemento */
+}
+  
+  .login-conteiner input[type="submit"] {
+    background-color: black;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .login-conteiner img {
+    width: auto;
+    height: 100px;
+  }
+  .login-conteiner a {
+    text-decoration: none;
+    color: black;
+  }

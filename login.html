@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mostrarRegistro() {
+          document.getElementById("login-container").style.display = "none";
+          document.getElementById("registro-container").style.display = "block";
+        }
+    </script>
+        <script>
+            function mostrarLogin() {
+              document.getElementById("registro-container").style.display = "none";
+              document.getElementById("login-container").style.display = "block";
+            }
+        </script>
+    <link rel="stylesheet" href="login.css"> <!-- Cambiado la ruta de la hoja de estilos -->
+</head>
+<body>
+    <div id="login-container" class="login-conteiner"> <!-- Corregido el ID del contenedor del formulario de inicio de sesión -->
+        <form method="post" action="/validar">
+            <img src="img/zxb.png" alt="">
+            <h2>Inicia sesion</h2>
+
+            <input type="email" name="email" placeholder="Emil" /><br />
+            <input type="password" name="password" placeholder="Password" /><br />
+            <input type="submit" value="sign in" /><br />
+        </form>
+        <p>¿No tienes una cuenta? <a href="#" onclick="mostrarRegistro()">Regístrate aquí</a>.</p>
+    </div>
+
+    <div id="registro-container" class="login-conteiner" style="display:none;"> <!-- Corregido el ID y la clase del contenedor del formulario de registro -->
+        <img src="img/zxb.png" alt="">
+        <h2>Registro</h2>
+        <form class="registro-form" action="/validar" method="post">
+
+            <input type="number" name="id" id="id" placeholder="id">
+            <input type="text" name="nombres" id="nombres" placeholder="Nombres">
+            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+            <input type="email" name="correo" id="correo" placeholder="Emil">
+            <input type="password" name="contrasenia" id="contrasenia" placeholder="Password">
+            <input type="submit" value="log in" /><br />
+        </form>
+        <p>¿Ya tienes cuenta? <a href="#" onclick="mostrarLogin()">Inicia sesion aqui</a>.</p>
+    </div>
+</body>
+</html>
